@@ -3,12 +3,12 @@
 @section ('title', 'Контакты')
 
 @section ('content')
-    <h1>Наши контакты</h1>
+    <h1>Контакты</h1>
     <p>Свяжитесь с нами любым удобным для вас способом:</p>
 
     <ul>
         @foreach ($contacts as $key => $value)
-            <li><strong>{{ $key }}:</strong> {{ $value }}</li>
+            <li><span>{{ $key }}:</span> {{ $value }}</li>
         @endforeach
     </ul>
 @endsection
