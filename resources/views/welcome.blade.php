@@ -3,7 +3,17 @@
 @section ('title', 'Главная страница')
 
 @section ('content')
-    <h1>Добро пожаловать на сайт!</h1>
-    <p>Сайт создан при помощи фреймворка Laravel.</p>
-    <p>Ссылки находятся в шапке сайта</p>
+    <table border='1'>
+        @foreach ($data as $articles)
+            <tr>
+                <td>{{$articles['date']}}</td>
+                <td>{{$articles['name']}}</td>
+                <td>{{$articles['preview_image']}}</td>
+                <td>{{$articles['full_image']}}</td>
+                <td>{{$articles['shortDesc']  ?? 'нифига'}}</td>
+                <td>{{$articles['desc']}}</td>
+                
+            </tr>
+        @endforeach
+    </table>
 @endsection
