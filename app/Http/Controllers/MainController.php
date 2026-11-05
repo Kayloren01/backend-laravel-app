@@ -13,4 +13,7 @@ class MainController extends Controller
         
         return view('welcome', ['data' => $data]);
     }
+    public function show_image($image_name){
+        return view('galery', ['image_name' => $image_name]);
+    }
 }

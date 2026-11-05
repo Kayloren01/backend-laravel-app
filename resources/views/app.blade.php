@@ -6,8 +6,8 @@
     <title>@yield ('title', 'Laravel APP')</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header style="margin-bottom:50px">
+        <nav style="display: flex; justify-content: center; gap: 10px;">
             <a href="/">Главная</a>
             <a href="/about">О нас</a>
             <a href="/contacts">Контакты</a>
@@ -16,8 +16,8 @@
     <main>
         @yield ('content')
     </main>
-    <footer>
-        <h2>Якунин Егор Андреевич 251-321</h2>
+    <footer style="margin-top:50px">
+        <h2 style="text-align:center">Якунин Егор Андреевич 251-321</h2>
     </footer>
 </body>
 </html>
