@@ -46,9 +46,9 @@
 
 ## Основные команды
 
-- `../sail up -d` — запуск проекта
-- `../sail down` — остановка контейнеров
-- `../sail artisan ...` — выполнение команд Artisan
-- `../sail composer ...` — управление пакетами
-- `../sail test` — запуск тестов
+- `./vendor/bin/sail up -d` — запуск проекта
+- `./vendor/bin/sail down` — остановка контейнеров
+- `./vendor/bin/sail artisan ...` — выполнение команд Artisan
+- `./vendor/bin/sail composer ...` — управление пакетами
+- `./vendor/bin/sail test` — запуск тестов
 - `npm run format` - форматирование
